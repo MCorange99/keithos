@@ -10,7 +10,15 @@ const prefix = '=';
 
 const fs = require('fs');
 
-client.commands = new Discord.Collection()
+const memberCounter = require('./counters/memcount');
+
+client.commands = new Discord.Collection();
+// client.events = new Discord.Collection();
+
+// ['command_handler', 'event_handler'].forEach(handler =>{
+//     require(`./handlers/${handler}`)(client, Discord);
+
+// })
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 
@@ -23,6 +31,7 @@ for(const file of commandFiles){
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    memberCounter(client)
 });
 
 client.on('guildMemberAdd', guildMember =>{
@@ -61,10 +70,14 @@ client.on('message', message =>{
         client.commands.get('unmute').execute(message, args, )
     } else if (command === 'reactionrole'){
         client.commands.get('reactionrole').execute(message, args, Discord, client )
+    } else if (command === 'play'){
+        client.commands.get('play').execute(message, args, )
+    } else if (command === 'stop'){
+        client.commands.get('stop').execute(message, args, )
     }
 });
 
-client.login('ODM3MzcxMDkwNzgzMTc0Njk2.YIrkmQ.oCNXlpIMQJmjdai_aYU1l2WWTjY');
+client.login(process.env.DISCORD_TOKEN);
 
 const express = require('express');
 const app = express();
