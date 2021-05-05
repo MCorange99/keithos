@@ -1,7 +1,7 @@
 module.exports = {
     name: 'member',
     description: "Adds / unnads member role",
-    execute(message, args){
+    execute(client, message, args){
 
             if(message.member.roles.cache.has('836158079547998240')){
                 message.channel.send('Took member role');

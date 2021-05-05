@@ -1,7 +1,7 @@
 module.exports = {
     name: 'clear',
     description: "clears the number of messages specified",
-    async execute(message, args){
+    async execute(client, message, args){
 
         if(message.member.roles.cache.has('822077733348573204')){
             

@@ -1,7 +1,7 @@
 module.exports = {
     name: 'help',
     description: "Lists all the available commands",
-    execute(message, args, Discord){
+    execute(client, message, args, Discord){
         const helpEmbed = new Discord.MessageEmbed()
         .setColor('#738adb')
         .setTitle('Keithos bot help page.')
@@ -16,8 +16,6 @@ module.exports = {
             {name: 'ping', value: 'Pings the bot to check if its online.'},
             {name: 'mute', value: 'Mutes specified user if time is not specified user will be muted indefinetly.'},
             {name: 'unmute', value: 'Unmutes specified user.'},
-            {name: 'play', value: 'Plays mentioned song/link.'},
-            {name: 'leave', value: 'Stops music and leaves the music channel.'},
             
         )
 
