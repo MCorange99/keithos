@@ -16,6 +16,8 @@ module.exports = {
             {name: 'ping', value: 'Pings the bot to check if its online.'},
             {name: 'mute', value: 'Mutes specified user if time is not specified user will be muted indefinetly.'},
             {name: 'unmute', value: 'Unmutes specified user.'},
+            {name: 'play', value: 'Plays mentioned song/link.'},
+            {name: 'leave', value: 'Stops music and leaves the music channel.'},
             
         )
 
