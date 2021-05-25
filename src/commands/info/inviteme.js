@@ -15,14 +15,13 @@ module.exports = class InviteMeCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Invite Me')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
       .setDescription(oneLine`
-        Click [here](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599)
+        Click [here](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot)
         to invite me to your server!
       `)
       .addField('Other Links', 
-        '**[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Support Server](https://discord.gg/vdZG5epCWk) | ' +
+        '[Repository](https://github.com/MCorange99/keithos)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

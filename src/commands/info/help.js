@@ -39,7 +39,6 @@ module.exports = class HelpCommand extends Command {
       
       embed // Build specific command help embed
         .setTitle(`Command: \`${command.name}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
         .setDescription(command.description)
         .addField('Usage', `\`${prefix}${command.usage}\``, true)
         .addField('Type', `\`${capitalize(command.type)}\``, true)
@@ -85,7 +84,7 @@ module.exports = class HelpCommand extends Command {
       const size = message.client.commands.size - commands[OWNER].length;
 
       embed // Build help embed
-        .setTitle('Calypso\'s Commands')
+        .setTitle('Keithos Commands')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
@@ -97,7 +96,6 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {
@@ -108,9 +106,9 @@ module.exports = class HelpCommand extends Command {
 
       embed.addField(
         '**Links**', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) | ' +
+        '[Support Server](https://discord.gg/vdZG5epCWk) | ' +
+        '[Repository](https://github.com/MCorange99/keithos)**'
       );
         
     }
