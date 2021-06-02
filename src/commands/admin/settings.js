@@ -36,6 +36,7 @@ module.exports = class SettingsCommand extends Command {
     const welcomeChannel = message.guild.channels.cache.get(row.welcome_channel_id) || '`None`';
     const farewellChannel = message.guild.channels.cache.get(row.farewell_channel_id) || '`None`';
     const crownChannel = message.guild.channels.cache.get(row.crown_channel_id) || '`None`';
+    const serverIp = message.guild.channels.cache.get(row.server_ip) || '`None`';
     let modChannels = [];
     if (row.mod_channel_ids) {
       for (const channel of row.mod_channel_ids.split(' ')) {
@@ -106,6 +107,7 @@ module.exports = class SettingsCommand extends Command {
           .addField('Random Color', randomColor, true)
           .addField('Mod Channels', modChannels)
           .addField('Disabled Commands', disabledCommands)
+          .addField('Server IP', serverIp)
         );
       case 'l':
       case 'log':

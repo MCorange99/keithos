@@ -18,7 +18,7 @@ db.prepare(`
   CREATE TABLE IF NOT EXISTS settings (
     guild_id TEXT PRIMARY KEY,
     guild_name TEXT,
-    prefix TEXT DEFAULT "c!" NOT NULL,
+    prefix TEXT DEFAULT "=" NOT NULL,
     system_channel_id TEXT,
     starboard_channel_id TEXT,
     admin_role_id TEXT,
@@ -49,6 +49,7 @@ db.prepare(`
     voice_points INTEGER DEFAULT 1 NOT NULL, 
     crown_role_id TEXT,
     crown_channel_id TEXT,
+    server_ip TEXT,
     crown_message TEXT DEFAULT "?member has won ?role this week! Points have been reset, better luck next time!",
     crown_schedule TEXT DEFAULT "0 21 * * 5"
   );
@@ -113,6 +114,9 @@ const settings = {
   selectRoleLogId: db.prepare('SELECT role_log_id FROM settings WHERE guild_id = ?;'),
   selectMessageEditLogId: db.prepare('SELECT message_edit_log_id FROM settings WHERE guild_id = ?;'),
   selectMessageDeleteLogId: db.prepare('SELECT message_delete_log_id FROM settings WHERE guild_id = ?;'),
+
+  selectServerIp: db.prepare('SELECT server_ip FROM settings WHERE guild_id = ?;'),
+
   selectVerification: db.prepare(`
     SELECT verification_role_id, verification_channel_id, verification_message, verification_message_id 
     FROM settings
@@ -166,6 +170,7 @@ const settings = {
   updateCrownChannelId: db.prepare('UPDATE settings SET crown_channel_id = ? WHERE guild_id = ?;'),
   updateCrownMessage: db.prepare('UPDATE settings SET crown_message = ? WHERE guild_id = ?;'),
   updateCrownSchedule: db.prepare('UPDATE settings SET crown_schedule = ? WHERE guild_id = ?;'),
+  updateServerIp: db.prepare('UPDATE settings SET server_ip = ? WHERE guild_id = ?;'),
   deleteGuild: db.prepare('DELETE FROM settings WHERE guild_id = ?;')
 };
 
