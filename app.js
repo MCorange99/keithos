@@ -2,6 +2,14 @@ const config = require('./config.json');
 const Client = require('./src/Client.js');
 const { Intents } = require('discord.js');
 
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.listen(port, () => console.log(`Keithos listening at http://localhost:${port}`));
+
 global.__basedir = __dirname;
 
 // Client setup
