@@ -18,9 +18,7 @@ module.exports = class SetPrefixCommand extends Command {
     const oldServerIp = message.client.db.settings.selectServerIp.pluck().get(message.guild.id);
     const serverIp = args[0];
     
-    if (!serverIp) return this.sendErrorMessage(message, 0, 'Please provide an IP');
-    // else if (prefix.length > 3) 
-    //   return this.sendErrorMessage(message, 0, 'Please ensure the prefix is no larger than 3 characters');
+ 
     message.client.db.settings.updateServerIp.run(serverIp, message.guild.id);
     const embed = new MessageEmbed()
       .setTitle('Settings: `System`')
