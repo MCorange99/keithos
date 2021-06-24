@@ -7,18 +7,18 @@ module.exports = class SupportServerCommand extends Command {
       name: 'supportserver',
       aliases: ['support', 'ss'],
       usage: 'supportserver',
-      description: 'Displays the invite link to Calypso\'s Discord Support Server.',
+      description: 'Displays the invite link to Keithos Discord Support Server.',
       type: client.types.INFO
     });
   }
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Support Server')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
-      .setDescription('Click [here](https://discord.gg/pnYVdut) to join the Calypso Support Server!')
+      .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.pngg')
+      .setDescription('Click [here](https://discord.gg/M7nDZxKk24) to join the Keithos Support Server!')
       .addField('Other Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) | ' +
+        '[Repository](https://github.com/MCorange99/keithos)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

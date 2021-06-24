@@ -66,9 +66,9 @@ module.exports = (client, message) => {
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Calypso Support Server](https://discord.gg/pnYVdut)!
+          [Calypso Support Server](https://discord.gg/M7nDZxKk24)!
         `)
-        .setFooter('DM Nettles#8880 to speak directly with the developer!')
+        .setFooter('DM MCorange#0001 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     }

@@ -1,6 +1,6 @@
 {
-  "name": "calypso",
-  "version": "1.7.0",
+  "name": "keithos",
+  "version": "3.5.0",
   "description": "A fully customizable bot built with discord.js",
   "main": "app.js",
   "dependencies": {
@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/MCorange99/keithos.git"
   },
-  "author": "Sebastian Battle",
+  "author": "MCorange",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/MCorange99/keithos/issues"
