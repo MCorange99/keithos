@@ -7,7 +7,7 @@ module.exports = class KickCommand extends Command {
       name: 'kick',
       usage: 'kick <user mention/ID> [reason]',
       description: 'Kicks a member from your server.',
-      type: client.types.MOD,
+      type: client.types.OWNER,
       examples: ['kick @Nettles'],
       ownerOnly: true
     });
