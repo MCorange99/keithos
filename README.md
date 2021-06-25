@@ -73,14 +73,14 @@
   
   ## Installation
   
-  You can add Calypso to your server with [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) link!.
-  ```
+  You can add Keithos to your server with [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) link!.
+  
   
   ### Colors
   
-  Upon being invited to a server, Calypso will automatically create **6** predefined colors for your server to enjoy. To add more, use the provided `createcolor` command to quickly and easily create new colors.
+  Upon being invited to a server, Keithos will automatically create **6** predefined colors for your server to enjoy. To add more, use the provided `createcolor` command to quickly and easily create new colors.
   
-  To add colors manually, first create a few empty roles at the bottom of your server's role hierarchy. The names of these roles must begin with the character `#`, for example, `#Red` or `#Blue`. Then change the color of that role to your desired hex, and that's it! After they are set up, the members of your server can then change their color by using Calypso's color commands! Credit to [Threebow](https://github.com/Threebow) for the idea.
+  To add colors manually, first create a few empty roles at the bottom of your server's role hierarchy. The names of these roles must begin with the character `#`, for example, `#Red` or `#Blue`. Then change the color of that role to your desired hex, and that's it! After they are set up, the members of your server can then change their color by using Keithos color commands!
   
   ![Alt Text](https://i.imgur.com/SLJCN6y.gif)
   
