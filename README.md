@@ -10,19 +10,18 @@
   
   
   <div align=center>
-  
-    <a href="https://discord.gg/M7nDZxKk24">
-    </a>
-  
-    <a href="https://github.com/discordjs">
-      <img src="https://img.shields.io/badge/discord.js-v12.3.1-blue.svg?logo=npm" alt="shield.png">
-    </a>
-  
-    <a href="https://github.com/sabattle/CalypsoBot/blob/develop/LICENSE">
-      <img src="https://img.shields.io/badge/license-GNU%20GPL%20v3-green" alt="shield.png">
-    </a>
-  
-  </div>
+
+  <a href="https://github.com/discordjs">
+    <img src="https://img.shields.io/badge/discord.js-v12.3.1-blue.svg?logo=npm" alt="shield.png">
+  </a>
+
+  <a href="https://github.com/sabattle/CalypsoBot/blob/develop/LICENSE">
+    <img src="https://img.shields.io/badge/license-GNU%20GPL%20v3-green" alt="shield.png">
+  </a>
+	
+<a href="https://discord.gg/M7nDZxKk24"> Support Discord Server </a>
+	
+</div>
   
   <p align="center">
     <a href="#about">About</a>
@@ -30,8 +29,6 @@
     <a href="#features">Features</a>
     •
     <a href="#installation">Installation</a>
-    •
-    <a href="#setting-up">Setting Up</a>
     •
     <a href="#license">License</a>
     •
