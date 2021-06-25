@@ -58,11 +58,11 @@ module.exports = (client, message) => {
     ) {
       const embed = new MessageEmbed()
         .setTitle('Hi, I\'m Calypso. Need help?')
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
-          [here](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599)!
+          [here](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot)!
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 

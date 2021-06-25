@@ -10,7 +10,7 @@ module.exports = class BotInfoCommand extends Command {
       name: 'botinfo',
       aliases: ['bot', 'bi'],
       usage: 'botinfo',
-      description: 'Fetches Calypso\'s bot information.',
+      description: 'Fetches Keithos bot information.',
       type: client.types.INFO
     });
   }
@@ -24,13 +24,12 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Bot Information')
+      .setTitle('Keithos Bot Information')
       .setDescription(oneLine`
-        Calypso is an open source, fully customizable Discord bot that is constantly growing.
+        Keithos is an open source, fully customizable Discord bot that is constantly growing.
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
-        Her codebase also serves as a base framework to easily create Discord bots of all kinds.
-        She first went live on **February 22nd, 2018**.
+        Her codebase also serves as a base framework to easily create Discord bots of all kinds..
       `)
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Client ID', `\`${message.client.user.id}\``, true)
@@ -38,11 +37,11 @@ module.exports = class BotInfoCommand extends Command {
       .addField('Tech', `\`\`\`asciidoc\n${tech}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) | ' +
+        '[Support Server](https://discord.gg/M7nDZxKk24) | ' +
+        '[Repository](https://github.com/MCorange99/keithos)**'
       )
-      .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
+      .setImage('https://github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

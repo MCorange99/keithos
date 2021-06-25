@@ -20,7 +20,7 @@ module.exports = class InviteMeCommand extends Command {
         to invite me to your server!
       `)
       .addField('Other Links', 
-        '**[Support Server](https://discord.gg/vdZG5epCWk) | ' +
+        '**[Support Server](https://discord.gg/M7nDZxKk24) | ' +
         '[Repository](https://github.com/MCorange99/keithos)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

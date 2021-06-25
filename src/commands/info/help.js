@@ -107,7 +107,7 @@ module.exports = class HelpCommand extends Command {
       embed.addField(
         '**Links**', 
         '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) | ' +
-        '[Support Server](https://discord.gg/vdZG5epCWk) | ' +
+        '[Support Server](https://discord.gg/M7nDZxKk24) | ' +
         '[Repository](https://github.com/MCorange99/keithos)**'
       );
         
