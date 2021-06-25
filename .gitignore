@@ -1,5 +1,4 @@
 # ignore
-*.sqlite*
 node_modules
 logs/*
 data/emojis
