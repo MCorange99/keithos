@@ -4,8 +4,7 @@ logs/*
 data/emojis
 .vscode
 .directory
-config.json
 to-do.txt
-
+package-lock.json
 # do not ignore
 !.gitkeep
