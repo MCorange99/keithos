@@ -1,6 +1,6 @@
 {
   "name": "keithos",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "A fully customizable bot built with discord.js",
   "main": "app.js",
   "dependencies": {
