@@ -1,8 +1,8 @@
 <h1 align="center">
     <br>
-    <a href="https://github.com/sabattle/CalypsoBot"><img src="./data/images/Calypso_Title.png"></a>
+    <a href="https://github.com/MCorange99/keithos"><img src="./data/images/Calypso_Title.png"></a>
     <br>
-    Calypso Discord Bot
+    Keithos Discord Bot
     <br>
   </h1>
   

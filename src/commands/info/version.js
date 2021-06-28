@@ -7,7 +7,8 @@ module.exports = class version extends Command {
   constructor(client) {
     super(client, {
       name: 'version', //command name
-      usage: 'version', //usage for the command, example: ping (prepends prefix in the help command btw)
+      usage: 'version',
+      aliases: ['ver'], //usage for the command, example: ping (prepends prefix in the help command btw)
       description: 'Gives the current keithos version number', //description for it
       type: client.types.INFO //can be any available types, look in this.types in client.js file
     });
