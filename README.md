@@ -96,6 +96,7 @@
   
   ## Credits
   
-  * **MCorange** - *Main work with bot* - [github](https://github.com/MCorange99) - MCorange#0001
-  * **Kaidaras** - *Web design and ideas* - [github](https://github.com/kaidargames) - kaidargames#0525
-  * **Typo** - *Ideas and emotional support* - typo#0922
+  * **MCorange** - *Main work with bot* - [github](https://github.com/MCorange99) - MCorange#0001,
+  * **Kaidaras** - *Web design and ideas* - [github](https://github.com/kaidargames) - kaidargames#0525,
+  * **Typo** - *Ideas and emotional support* - typo#0922,
+  * **Nettles** - Original bot was Calypso, Author [GitHub](https://github.com/sabattle/CalypsoBot).
