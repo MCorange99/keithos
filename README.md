@@ -37,7 +37,7 @@
   
   ## About
   
-  Keithos is an open source, fully customizable Discord bot that is constantly growing. She comes packaged with a variety of commands and a multitude of settings that can be tailored to your server's specific needs. Her codebase also serves as a base framework to easily create Discord bots of all kinds. You can invite her to your Discord server using [this](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) link! Also, you can join the official [Calypso Support Server](https://discord.gg/pnYVdut) for all questions, suggestions, and assistance!
+  Keithos is an open source, fully customizable Discord bot that is constantly growing. She comes packaged with a variety of commands and a multitude of settings that can be tailored to your server's specific needs. You can invite it to your Discord server using [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) link! Also, you can join the official [Keithos Support Server](https://discord.gg/M7nDZxKk24) for all questions, suggestions, and assistance!
   
   If you liked this repository, feel free to leave a star ⭐ to help promote Keithos!
   
@@ -83,7 +83,7 @@
   
   ## To-Do
   
-  Calypso is in a continuous state of development. New features/updates may come at any time. Some pending ideas are:
+  Keithos is in a continuous state of development. New features/updates may come at any time. Some pending ideas are:
   
     * Music
     * Automod
