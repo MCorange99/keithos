@@ -11,7 +11,7 @@ module.exports = class PrefixCommand extends Command {
     });
   }
   run(message) {
-    const serverIp = message.client.db.settings.selectServerIp.pluck().get(message.guild.id); // Get prefix
+    const serverIp = message.client.db.settings.selectServerIp.pluck().get(message.guild.id) || '`None`'; // Get prefix
     const embed = new MessageEmbed()
       .setTitle('Servers IP')
       .addField('IP', `\`${serverIp}\``, true)
