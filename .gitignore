@@ -16,3 +16,4 @@ data/db.sqlite-wal
 
 # do not ignore
 !.gitkeep
+data/db.sqlite-shm
