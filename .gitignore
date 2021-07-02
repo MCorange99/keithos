@@ -10,5 +10,9 @@ config.json
 .sqlite
 .sqlite-wal
 .sqlite-shm
+data/db.sqlite
+data/db.sqlite-shm
+data/db.sqlite-wal
+
 # do not ignore
 !.gitkeep
