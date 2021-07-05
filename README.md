@@ -21,6 +21,13 @@
 	
 <a href="https://discord.gg/M7nDZxKk24"> Support Discord Server </a>
 	
+<p align="center">	
+	
+<a href="https://discordbotlist.com/bots/837371090783174696"><img src="https://discordbotlist.com/api/v1/bots/837371090783174696/widget"></a>
+	
+<a href="https://discord.boats/bot/837371090783174696">vote on discord.boats</a>
+</p>	
+	
 </div>
   
   <p align="center">
