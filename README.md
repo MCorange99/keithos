@@ -79,7 +79,7 @@
   
   To add colors manually, first create a few empty roles at the bottom of your server's role hierarchy. The names of these roles must begin with the character `#`, for example, `#Red` or `#Blue`. Then change the color of that role to your desired hex, and that's it! After they are set up, the members of your server can then change their color by using Keithos color commands!
   
-  ![Alt Text](https://i.imgur.com/SLJCN6y.gif)
+  ![Alt Text](./data/images/keithosdemo.gif)
   
   ## To-Do
   
