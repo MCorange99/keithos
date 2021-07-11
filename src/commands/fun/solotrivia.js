@@ -8,7 +8,7 @@ module.exports = class SoloTriviaCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'solotrivia',
-      aliases: ['solotriv', 'striv', 'solot', 'st'],
+      aliases: ['solotriv', 'striv', 'solot',],
       usage: 'solotrivia [topic]',
       description: oneLine`
         Test your knowledge in a game of trivia (only you can answer).
