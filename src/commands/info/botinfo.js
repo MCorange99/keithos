@@ -41,7 +41,7 @@ module.exports = class BotInfoCommand extends Command {
         '[Support Server](https://discord.gg/M7nDZxKk24) | ' +
         '[Repository](https://github.com/MCorange99/keithos)**'
       )
-      .setImage('https://github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
+      .setImage('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

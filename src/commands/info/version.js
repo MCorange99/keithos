@@ -25,7 +25,7 @@ fs.readFile('package.json', 'utf8', (err, jsonString) => {
         const pack = JSON.parse(jsonString)
         const ver = pack.version
         embed.setTitle('Keithos Version')
-        .setThumbnail('https://raw.github.com/MCorange99/keithos/tree/main/data/images')
+        .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .addField('Version is:', `\`${ver}\``, true)
         .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
         .setColor(message.guild.me.displayHexColor);

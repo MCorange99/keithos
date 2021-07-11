@@ -15,7 +15,7 @@ module.exports = class GitHubCommand extends Command {
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('GitHub Link')
-      .setThumbnail('https://raw.github.com/MCorange99/keithos/tree/main/data/images')
+      .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setDescription(oneLine`
         Click [here](https://github.com/MCorange99/keithos) to to visit my GitHub repository!
         Please support me by starring ⭐ the repo, and feel free to comment about issues or suggestions!

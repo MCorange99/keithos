@@ -15,7 +15,7 @@ module.exports = class PrefixCommand extends Command {
     const prefix = message.client.db.settings.selectPrefix.pluck().get(message.guild.id); // Get prefix
     const embed = new MessageEmbed()
       .setTitle('Keithos Prefix')
-      .setThumbnail('https://raw.github.com/MCorange99/keithos/tree/main/data/images')
+      .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Example', `\`${prefix}ping\``, true)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

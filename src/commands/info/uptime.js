@@ -21,7 +21,7 @@ module.exports = class UptimeCommand extends Command {
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
       .setTitle('Keithos Uptime')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

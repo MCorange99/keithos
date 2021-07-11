@@ -54,7 +54,7 @@ module.exports = class AliasesCommand extends Command {
 
       embed
         .setTitle(`Alias Type: \`${capitalize(type)}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .addField(
           `**${emojiMap[type]} [${aliases[type].reduce((a, b) => a + b.split(' ').slice(1).length, 0)}]**`, 
           aliases[type].join('\n')
