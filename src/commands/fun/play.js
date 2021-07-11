@@ -19,7 +19,6 @@ module.exports = class MyCommandName extends Command {
 
     const prefix = message.client.db.settings.selectPrefix.get(message.guild.id);
     const x = message.content.replace(prefix, "").split(" ")[0]
-    console.log(x)
 
       //Checking for the voicechannel and permissions (you can add more permissions if you like).
       const voice_channel = message.member.voice.channel;
