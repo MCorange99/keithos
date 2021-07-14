@@ -43,7 +43,7 @@
   
   ## About
   
-  Keithos is an open source, fully customizable Discord bot that is constantly growing. She comes packaged with a variety of commands and a multitude of settings that can be tailored to your server's specific needs. You can invite it to your Discord server using [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) link! Also, you can join the official [Keithos Support Server](https://discord.gg/M7nDZxKk24) for all questions, suggestions, and assistance!
+  Keithos is an open source, fully customizable Discord bot that is constantly growing. She comes packaged with a variety of commands and a multitude of settings that can be tailored to your server's specific needs. You can invite it to your Discord server using [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands) link! Also, you can join the official [Keithos Support Server](https://discord.gg/M7nDZxKk24) for all questions, suggestions, and assistance!
   
   If you liked this repository, feel free to leave a star ⭐ to help promote Keithos!
   
@@ -76,7 +76,7 @@
   
   ## Installation
   
-  You can add Keithos to your server with [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) link!.
+  You can add Keithos to your server with [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands) link!.
   
   
   ### Colors
