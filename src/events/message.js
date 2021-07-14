@@ -87,7 +87,7 @@ module.exports = (client, message) => {
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
-          [here](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot)!
+          [here](https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands)!
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
