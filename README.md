@@ -51,27 +51,27 @@
   
   **110+** commands and counting across **8** different categories!
   
-    * **Administration:** A huge amount of settings to customize with commands like `setprefix`, `setwelcomemessage`, and `setverificationrole`
-    * **Moderation:** Commands such as `kick`, `ban`, and `mute` to assist your moderator staff
-    * **Fun & Games:** Tons of fun commands like `trivia`, `meme`, `emojify`, and a variety of animal pic commands like `cat`, `dog`, and `fox`
-    * **Information:** Commands like `userinfo` and `serverinfo` for general utility
-    * **Points:** A unique points system with a rotating winner that has commands like `leaderboard`, `givepoints`, and `crown`
-    * **Color:** Change your Discord color with commands like `color`, `createcolor` and `randomcolor`
-    * **Owner:** Owner specific commands like `eval` and `servers`
-    * **Miscellaneous:** All other commands like `feedback` and `bugreport`
+   * **Administration:** A huge amount of settings to customize with commands like `setprefix`, `setwelcomemessage`, and `setverificationrole`
+   * **Moderation:** Commands such as `kick`, `ban`, and `mute` to assist your moderator staff
+   * **Fun & Games:** Tons of fun commands like `trivia`, `meme`, `emojify`, and a variety of animal pic commands like `cat`, `dog`, and `fox`
+   * **Information:** Commands like `userinfo` and `serverinfo` for general utility
+   * **Points:** A unique points system with a rotating winner that has commands like `leaderboard`, `givepoints`, and `crown`
+   * **Color:** Change your Discord color with commands like `color`, `createcolor` and `randomcolor`
+   * **Owner:** Owner specific commands like `eval` and `servers`
+   * **Miscellaneous:** All other commands like `feedback` and `bugreport`
   
   Keithos also comes packed with a variety of features, such as:
   
-    * **Auto role** assignment
-    * Server **verification** via reactions
-    * **Welcome messages** and **farewell messages**
-    * **Logging** for mod commands and various events
-    * **Moderator only** channels
-    * A **starboard**
-    * **Auto kicking** when a warn limit is reached
-    * Auto **random colors** when members join
-    * Per **command disabling**
-    * And much more! There are over **30+** settings to tweak!
+   * **Auto role** assignment
+   * Server **verification** via reactions
+   * **Welcome messages** and **farewell messages**
+   * **Logging** for mod commands and various events
+   * **Moderator only** channels
+   * A **starboard**
+   * **Auto kicking** when a warn limit is reached
+   * Auto **random colors** when members join
+   * Per **command disabling**
+   * And much more! There are over **30+** settings to tweak!
   
   
   ## Installation
@@ -91,10 +91,10 @@
   
   Keithos is in a continuous state of development. New features/updates may come at any time. Some pending ideas are:
   
-    * Music
-    * Automod
-    * Stream alerts
-    * Custom tag/reaction system
+   * Music
+   * Automod
+   * Stream alerts
+   * Custom tag/reaction system
   
   ## License
   
