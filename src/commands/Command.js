@@ -70,7 +70,7 @@ class Command {
      * @type {Array<string>}
      */
     this.examples = options.examples || null;
-    
+
     /**
      * If command can only be used by owner
      * @type {boolean}
@@ -90,10 +90,15 @@ class Command {
     this.errorTypes = ['Invalid Argument', 'Command Failure'];
 
     /**
+    * Toggle cooldown
+    */
+    this.toggleCooldown = options.toggleCooldown || false;
+
+    /**
      * The cooldown
      * @type {Number}
      */
-    this.cooldown = options.cooldown;
+    this.cooldown = options.cooldown || 5;
   }
 
   /**
@@ -170,7 +175,7 @@ class Command {
     if (this.ownerOnly && !this.client.isOwner(message.author)) {
       return false;
     }
-    
+
     if (message.member.hasPermission('ADMINISTRATOR')) return true;
     if (this.userPermissions) {
       const missingPermissions =
@@ -209,7 +214,7 @@ class Command {
 
     } else return true;
   }
-  
+
   /**
    * Creates and sends command failure embed
    * @param {Message} message
@@ -242,7 +247,7 @@ class Command {
     const modLogId = message.client.db.settings.selectModLogId.pluck().get(message.guild.id);
     const modLog = message.guild.channels.cache.get(modLogId);
     if (
-      modLog && 
+      modLog &&
       modLog.viewable &&
       modLog.permissionsFor(message.guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS'])
     ) {
@@ -293,19 +298,19 @@ class Command {
     if (options.usage && typeof options.usage !== 'string') throw new TypeError('Command usage is not a string');
 
     // Description
-    if (options.description && typeof options.description !== 'string') 
+    if (options.description && typeof options.description !== 'string')
       throw new TypeError('Command description is not a string');
-    
+
     // Type
     if (options.type && typeof options.type !== 'string') throw new TypeError('Command type is not a string');
     if (options.type && !Object.values(client.types).includes(options.type))
       throw new Error('Command type is not valid');
-    
+
     // Client permissions
     if (options.clientPermissions) {
       if (!Array.isArray(options.clientPermissions))
         throw new TypeError('Command clientPermissions is not an Array of permission key strings');
-      
+
       for (const perm of options.clientPermissions) {
         if (!permissions[perm]) throw new RangeError(`Invalid command clientPermission: ${perm}`);
       }
@@ -326,11 +331,11 @@ class Command {
       throw new TypeError('Command examples is not an Array of permission key strings');
 
     // Owner only
-    if (options.ownerOnly && typeof options.ownerOnly !== 'boolean') 
+    if (options.ownerOnly && typeof options.ownerOnly !== 'boolean')
       throw new TypeError('Command ownerOnly is not a boolean');
 
     // Disabled
-    if (options.disabled && typeof options.disabled !== 'boolean') 
+    if (options.disabled && typeof options.disabled !== 'boolean')
       throw new TypeError('Command disabled is not a boolean');
   }
 }
