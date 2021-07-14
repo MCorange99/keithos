@@ -88,6 +88,12 @@ class Command {
      * @type {Array<string>}
      */
     this.errorTypes = ['Invalid Argument', 'Command Failure'];
+
+    /**
+     * The cooldown
+     * @type {Number}
+     */
+    this.cooldown = options.cooldown;
   }
 
   /**
