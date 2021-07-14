@@ -41,26 +41,30 @@ module.exports = (client, message) => {
         }
       }
 
-      if (!client.cooldowns.has(command.name)) {
-        client.cooldowns.set(command.name, new Collection());
-      };
+      if (command.toggleCooldown) {
 
-      const time = client.cooldowns.get(command.name);
-      const amount = (command.cooldown || 5) * 1000;
-
-      if (time.has(message.author.id)) {
-
-        const expire = time.get(message.author.id) + amount;
-
-        if (Date.now() < expire) {
-          const left = (expire - Date.now()) / 1000;
-
-          return message.channel.send(`The command is currently on \`${left.toFixed(1)}\` seconds`);
+        if (!client.cooldowns.has(command.name)) {
+          client.cooldowns.set(command.name, new Collection());
         };
-      };
 
-      time.set(message.author.id, Date.now());
-      setTimeout(() => time.delete(message.author.id), amount);
+        const time = client.cooldowns.get(command.name);
+        const amount = (command.cooldown || 5) * 1000;
+
+        if (time.has(message.author.id)) {
+
+          const expire = time.get(message.author.id) + amount;
+
+          if (Date.now() < expire) {
+            const left = (expire - Date.now()) / 1000;
+
+            return message.channel.send(`The command is currently on \`${left.toFixed(1)}\` seconds`);
+          };
+        };
+
+        time.set(message.author.id, Date.now());
+        setTimeout(() => time.delete(message.author.id), amount);
+
+      };
 
       // Check permissions
       const permission = command.checkPermissions(message);
@@ -83,7 +87,7 @@ module.exports = (client, message) => {
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
-          [here](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands)!
+          [here](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot)!
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
