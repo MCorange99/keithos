@@ -57,7 +57,6 @@
    * **Information:** Commands like `userinfo` and `serverinfo` for general utility
    * **Points:** A unique points system with a rotating winner that has commands like `leaderboard`, `givepoints`, and `crown`
    * **Color:** Change your Discord color with commands like `color`, `createcolor` and `randomcolor`
-   * **Owner:** Owner specific commands like `eval` and `servers`
    * **Miscellaneous:** All other commands like `feedback` and `bugreport`
   
   Keithos also comes packed with a variety of features, such as:
