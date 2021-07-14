@@ -56,6 +56,12 @@ class Client extends Discord.Client {
      */
     this.aliases = new Discord.Collection();
 
+    /**
+     * Collection of command cooldowns
+     * @type {Collection<string, Command>}
+     */
+    this.cooldowns = new Discord.Collection();
+
     /** 
      * Array of trivia topics
      * @type {Array<string>}

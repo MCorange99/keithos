@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, Collection } = require('discord.js');
 const { oneLine } = require('common-tags');
 
 module.exports = (client, message) => {
@@ -6,10 +6,10 @@ module.exports = (client, message) => {
 
   // Get disabled commands
   let disabledCommands = client.db.settings.selectDisabledCommands.pluck().get(message.guild.id) || [];
-  if (typeof(disabledCommands) === 'string') disabledCommands = disabledCommands.split(' ');
-  
+  if (typeof (disabledCommands) === 'string') disabledCommands = disabledCommands.split(' ');
+
   // Get points
-  const { point_tracking: pointTracking, message_points: messagePoints, command_points: commandPoints } = 
+  const { point_tracking: pointTracking, message_points: messagePoints, command_points: commandPoints } =
     client.db.settings.selectPoints.get(message.guild.id);
 
   // Command handler
@@ -20,7 +20,7 @@ module.exports = (client, message) => {
 
     // Get mod channels
     let modChannelIds = message.client.db.settings.selectModChannelIds.pluck().get(message.guild.id) || [];
-    if (typeof(modChannelIds) === 'string') modChannelIds = modChannelIds.split(' ');
+    if (typeof (modChannelIds) === 'string') modChannelIds = modChannelIds.split(' ');
 
     const [, match] = message.content.match(prefixRegex);
     const args = message.content.slice(match.length).trim().split(/ +/g);
@@ -31,8 +31,8 @@ module.exports = (client, message) => {
       // Check if mod channel
       if (modChannelIds.includes(message.channel.id)) {
         if (
-          command.type != client.types.MOD || (command.type == client.types.MOD && 
-          message.channel.permissionsFor(message.author).missing(command.userPermissions) != 0)
+          command.type != client.types.MOD || (command.type == client.types.MOD &&
+            message.channel.permissionsFor(message.author).missing(command.userPermissions) != 0)
         ) {
           // Update points with messagePoints value
           if (pointTracking)
@@ -40,6 +40,27 @@ module.exports = (client, message) => {
           return; // Return early so Calypso doesn't respond
         }
       }
+
+      if (!client.cooldowns.has(command.name)) {
+        client.cooldowns.set(command.name, new Collection());
+      };
+
+      const time = client.cooldowns.get(command.name);
+      const amount = (command.cooldown || 5) * 1000;
+
+      if (time.has(message.author.id)) {
+
+        const expire = time.get(message.author.id) + amount;
+
+        if (Date.now() < expire) {
+          const left = (expire - Date.now()) / 1000;
+
+          return message.channel.send(`The command is currently on \`${left.toFixed(1)}\` seconds`);
+        };
+      };
+
+      time.set(message.author.id, Date.now());
+      setTimeout(() => time.delete(message.author.id), amount);
 
       // Check permissions
       const permission = command.checkPermissions(message);
@@ -51,7 +72,7 @@ module.exports = (client, message) => {
         message.command = true; // Add flag for messageUpdate event
         return command.run(message, args); // Run command
       }
-    } else if ( 
+    } else if (
       (message.content === `<@${client.user.id}>` || message.content === `<@!${client.user.id}>`) &&
       message.channel.permissionsFor(message.guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS']) &&
       !modChannelIds.includes(message.channel.id)
