@@ -2,7 +2,7 @@
     <br>
     <a href="https://github.com/MCorange99/keithos"><img src="./data/images/Calypso_Title.png"></a>
     <br>
-    Keithos Discord Bot
+    Keithos Discord Bot Dev Branch
     <br>
   </h1>
   
