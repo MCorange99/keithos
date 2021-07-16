@@ -10,7 +10,9 @@ module.exports = class FeedbackCommand extends Command {
       usage: 'feedback <message>',
       description: 'Sends a message to the Keithos Support Server\'s feedback channel.',
       type: client.types.MISC,
-      examples: ['feedback We love Keithos!']
+      examples: ['feedback We love Keithos!'],
+      toggleCooldown: true,
+      cooldown: 15
     });
   }
   run(message, args) {

@@ -13,7 +13,9 @@ module.exports = class ReportBugCommand extends Command {
         When reporting a bug, please include as much information as possible.
       `,
       type: client.types.MISC,
-      examples: ['reportbug bot is botched']
+      examples: ['reportbug bot is botched'],
+      toggleCooldown: true,
+      cooldown: 15
     });
   }
   run(message, args) {

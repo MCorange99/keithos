@@ -11,7 +11,7 @@ module.exports = class poll extends Command {
             type: client.types.MOD,
             clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'ADD_REACTIONS'],
             userPermissions: ['MANAGE_GUILD'],
-            toggleCooldown: true,
+            toggleCooldown: false,
             cooldown: 6
         });
     };
