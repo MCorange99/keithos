@@ -25,8 +25,8 @@
 	
 <a href="https://discord.boats/bot/837371090783174696">Vote on discord.boats</a>
 	
-	**Note: This repository has been archived because we transfered it to https://github.com/KeithosTeam/Keithos
-	Please go there for any issues or questions.**
+	Note: This repository has been archived because we transfered it to https://github.com/KeithosTeam/Keithos
+	Please go there for any issues or questions.
 	
 	
 </div>
