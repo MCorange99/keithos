@@ -2,8 +2,7 @@
     <br>
     <a href="https://github.com/MCorange99/keithos"><img src="./data/images/Calypso_Title.png"></a>
     <br>
-    Keithos Discord Bot Dev Branch
-    <br>
+    Keithos Discord Bot <br>
   </h1>
   
   <h3 align=center>A fully customizable bot built with <a href=https://github.com/discordjs/discord.js>discord.js</a></h3>
@@ -25,6 +24,9 @@
 <a href="https://discordbotlist.com/bots/keithos">Vote on discordbotlist.com</a>
 	
 <a href="https://discord.boats/bot/837371090783174696">Vote on discord.boats</a>
+	
+	**Note: This repository has been archived because we transfered it to https://github.com/KeithosTeam/Keithos
+	Please go there for any issues or questions.**
 	
 	
 </div>
